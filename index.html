@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Calculadora</title>
+    <style>
+        body{
+            background-color: #CE93D8;
+            font-family:lucida Bright;;
+        }
+        
+        input {
+            text-align: center;
+            size: 10px;
+            padding: 4px;
+            margin-bottom: 9px;
+            
+        }
+
+        .btn{
+            text-align: center;
+            font-family: lucida Bright;
+            align-content: center;
+            font-size: 15px;
+            width: 120px;
+            height: 45px;
+            background: #0096d2;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .btn-ope{
+            text-align: center;
+            font-family: lucida Bright;
+            align-content: center;
+            font-size: 15px;
+            width: 59px;
+            height: 43px;
+            background: #0096d2;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 6px;
+            margin-right: 92px;
+        }
+
+        /*.derecha{
+            position: absolute;
+            top: 274px;
+            right: 124px;
+            font-size: 39px;
+            text-align: center;
+        }
+
+        .derecha2{
+            position: absolute;
+            top: 323px;
+            right: 124px;
+            font-size: 21px;
+            text-align: center;
+        }*/
+
+        h1{
+            font-size: 50px;
+        }
+
+        #flex{
+            display: flex;
+            justify-content: center;
+            margin-left: 86px;
+
+        }
+
+    </style>
+
+<script language="javascript">
+    var valor1 = 0
+    var valor2 = 0
+
+    var multiplica = function(){
+        alert(valor1 * valor2)
+    }
+
+    var suma = function(){
+        alert(valor1 + valor2)
+    }
+
+    var resta = function(){
+        alert(valor1 - valor2)
+    }
+
+    var divide = function(){
+        alert(valor1 / valor2)
+    }
+
+    var obtener = function(){
+        console.log('obteniendo datos')
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        valor1 = parseInt(a);
+        valor2 = parseInt(b);
+    }
+
+</script>
 </head>
-<body>
+<body onload="init();">
+    <center>
+    <form>
+        <h1>Calculadora</h1>
+        <h4>Por favor, antes de operar, hacer click en obtener contenido </h4>
+        <h3>ingrese dos numeros</h3>
+    <input type="text" id="numero1"><br>
+    <input type="text" id="numero2"><br>
+    <div onclick="obtener()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Obtener Contenido</div>
+    <div id="flex">
+    <div>
+        <div onclick="multiplica()"class="btn-ope">x</div>
+        <div onclick="suma()" class="btn-ope">+</div>
+    </div>
+    <div>
+        <div onclick="resta()" class="btn-ope derecha">-</div>
+        <div onclick="divide()" class="btn-ope derecha2">/</div>
+    </div>
+</div>
+
+    <input type="reset" value="Borrar" class="btn"><br>
     
+    </form>
+</center>
 </body>
 </html>
