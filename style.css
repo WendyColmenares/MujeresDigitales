@@ -1,0 +1,83 @@
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+
+        td{
+            background: cyan;
+        }
+
+        #colorespecial{
+            background:coral;
+        }
+
+        #comentarios{
+     
+            border-radius: 5px;
+            color: darkmagenta;
+            padding: 5px;
+
+        }
+
+        .btn{
+            width: 50px;
+            border: solid 1px;
+            height: 20px;
+            padding-top: 3px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #008fd8;
+            font-style: italic;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            opacity: 0.5;
+        }
+
+        .btn:hover{
+            background: darkmagenta;
+            width: 70px;
+            height: 25px;
+        }
+
+        input.txtcaja{
+            border: solid 1px;
+            border-radius: 7px;
+            font-size: 10 px;
+            background: aquamarine;
+            transition: all 0.4s ease-in-out;
+        }
+
+        input.txtcaja:hover{
+            background: brown;
+            color: white;
+
+        }
+
+        p {
+            animation-duration: 3s;
+            animation-name: slidein;
+            }
+
+            @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+                background: red;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+                background: blue;
+            }
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: -74px;
+                left: -86px;
+            }
