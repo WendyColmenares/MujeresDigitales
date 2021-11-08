@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inconsolata:wght@800&display=swap');
+
         body{
             background-color: #CE93D8;
-            font-family:lucida Bright;;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
         }
         
         input {
@@ -21,36 +25,49 @@
 
         .btn{
             text-align: center;
-            font-family: lucida Bright;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
             align-content: center;
-            font-size: 15px;
+            font-size: 20px;
             width: 120px;
             height: 45px;
-            background: #0096d2;
+            background: #CC0066;
             color: #ffffff;
             cursor: pointer;
             border: none;
-            border-radius: 3px;
+            border-radius: 4px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .btn:hover{
+            background: #FF66CC;
+            cursor: pointer;
         }
 
         .btn-ope{
             text-align: center;
-            font-family: lucida Bright;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
             align-content: center;
-            font-size: 15px;
+            font-size: 20px;
             width: 59px;
             height: 43px;
-            background: #0096d2;
+            background: #CC0066;
             color: #ffffff;
             cursor: pointer;
             border: none;
-            border-radius: 3px;
+            border-radius: 4px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             margin: 6px;
             margin-right: 92px;
+            transition: all 0.4s ease-in-out;
         }
+         .btn-ope:hover{
+            background:#A569BD;
+            cursor: pointer;
+         }
 
         /*.derecha{
             position: absolute;
@@ -70,6 +87,14 @@
 
         h1{
             font-size: 50px;
+            color: #CC0066;
+        }
+
+        h2{
+            color: #CC0066;
+        }
+        h4{
+            color: #ffffff;
         }
 
         #flex{
@@ -77,6 +102,18 @@
             justify-content: center;
             margin-left: 86px;
 
+        }
+
+        input.caja_numero{
+            border:none;
+            border-radius: 3px;
+            font-size: 20px;
+            background-color:#F8BBD0 ;
+            transition: all 0.5s ease-in-out;
+        }
+
+        input.caja_numero:hover{
+            background: #A569BD;
         }
 
     </style>
@@ -114,20 +151,20 @@
 <body onload="init();">
     <center>
     <form>
-        <h1>Calculadora</h1>
-        <h4>Por favor, antes de operar, hacer click en obtener contenido </h4>
-        <h3>ingrese dos numeros</h3>
-    <input type="text" id="numero1"><br>
-    <input type="text" id="numero2"><br>
+        <h1>🎆CALCULADORA🎆</h1>
+        <h4>Por favor, antes de operar, hacer click en "Obtener Contenido".༼ つ ◕_◕ ༽つ </h4>
+        <h2>(/≧▽≦)/INGRESE DOS NUMEROS</h2>
+    <input type="text" id="numero1" class="caja_numero"><br>
+    <input type="text" id="numero2" class="caja_numero"><br>
     <div onclick="obtener()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Obtener Contenido</div>
     <div id="flex">
     <div>
-        <div onclick="multiplica()"class="btn-ope">x</div>
-        <div onclick="suma()" class="btn-ope">+</div>
+        <div onclick="multiplica()"class="btn-ope">✖</div>
+        <div onclick="suma()" class="btn-ope">➕</div>
     </div>
     <div>
-        <div onclick="resta()" class="btn-ope derecha">-</div>
-        <div onclick="divide()" class="btn-ope derecha2">/</div>
+        <div onclick="resta()" class="btn-ope derecha">➖</div>
+        <div onclick="divide()" class="btn-ope derecha2">➗</div>
     </div>
 </div>
 
