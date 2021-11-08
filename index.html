@@ -4,9 +4,288 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Calculadora</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inconsolata:wght@800&display=swap');
+
+        body{
+            background-color: #CE93D8;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        input {
+            text-align: center;
+            size: 10px;
+            padding: 4px;
+            margin-bottom: 9px;
+            
+        }
+
+        .btn{
+            text-align: center;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
+            align-content: center;
+            font-size: 20px;
+            width: 120px;
+            height: 45px;
+            background: #CC0066;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .btn:hover{
+            background: #FF66CC;
+            cursor: pointer;
+        }
+
+        .btn-ope{
+            text-align: center;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Inconsolata', monospace;
+            align-content: center;
+            font-size: 20px;
+            width: 59px;
+            height: 43px;
+            background: #CC0066;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 6px;
+            margin-right: 92px;
+            transition: all 0.4s ease-in-out;
+        }
+         .btn-ope:hover{
+            background:#A569BD;
+            cursor: pointer;
+         }
+
+        /*.derecha{
+            position: absolute;
+            top: 274px;
+            right: 124px;
+            font-size: 39px;
+            text-align: center;
+        }
+
+        .derecha2{
+            position: absolute;
+            top: 323px;
+            right: 124px;
+            font-size: 21px;
+            text-align: center;
+        }*/
+
+        h1{
+            font-size: 50px;
+            color: #CC0066;
+        }
+
+        h2{
+            color: #CC0066;
+        }
+        h4{
+            color: #ffffff;
+        }
+
+        #flex{
+            display: flex;
+            justify-content: center;
+            margin-left: 86px;
+
+        }
+
+        input.caja_numero{
+            border:none;
+            border-radius: 3px;
+            font-size: 20px;
+            background-color:#F8BBD0 ;
+            transition: all 0.5s ease-in-out;
+        }
+
+        input.caja_numero:hover{
+            background: #A569BD;
+        }
+
+    </style>
+
+<script language="javascript">
+    var valor1 = 0
+    var valor2 = 0
+
+    var multiplica = function(){
+        alert(valor1 * valor2)
+    }
+
+    var suma = function(){
+        alert(valor1 + valor2)
+    }
+
+    var resta = function(){
+        alert(valor1 - valor2)
+    }
+
+    var divide = function(){
+        alert(valor1 / valor2)
+    }
+
+    var obtener = function(){
+        console.log('obteniendo datos')
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        valor1 = parseInt(a);
+        valor2 = parseInt(b);
+    }
+
+    for (var index = 0; index < 6; index++){
+        console.log("!Hola, Mundo!" + index)
+
+    } 
+
+// ejemplo tabla de multiplicar
+    for (var index = 0; index < 11; index++){
+        console.log("5"+" x " + index + " = " + (5*index))
+
+    }
+
+// esta condicion nos va a mostrar solo una vez el console, ya que rompimos el ciclo al asignarle un nuevo valor
+    var dato1 = 100;
+    while (dato1 < 120) {
+            console.log('Imprimir')
+            dato1 = 5000000;        
+    }
+//Condiciona hasta que el valor de la variable incremente hasta ser mayor que 110
+    var dato2 = 100;
+    while (dato2 < 110) {
+            console.log('Imprimir')
+            dato2 = dato2 + 1;
+    }
+//Condiciona variables string
+    var nombre = '';
+    while (nombre == '') {
+        console.log('Imprimir')
+        nombre = 'john'
+        console.log(nombre)
+    }
+
+//Condiciona variables booleanas
+    var booestado = true;
+    while (booestado) {
+        console.log('Imprimir')
+        booestado = false;
+        console.log(booestado)
+    }
+
+// Booleanocondicionado con un contador
+
+    // var booEstado = true;
+    // var contador = 0;
+
+    // while (booEstado = true) {
+    //     console.log('Imprimir')
+    //     contador = contador + 1;
+    //     if (contador == 5) {
+    //         booEstado = false;
+    //         console.log(booEstado)
+            
+    //     }
+        
+    // }
+    //no funciono :(
+// utilizacion  de switch, es una version mas completa del if
+// muestra el valor del dato en este caso 200
+var dato3 = 200;
+switch (dato3) {
+    case 100:
+        console.log('El valor es 100')
+        break;
+    case 200:
+        console.log('El valor es 200')
+        break;
+    case 300:
+        console.log('El valor es 300')
+        break;
+    default:
+        console.log('Ninguno')
+        break;
+}
+
+//mismo proceso anterior pero con una variable de aumento, y una funcion
+var dato4 = 100;
+var analizar = function(){
+    switch (dato4) {
+    case 100:
+        console.log('El valor es 100')
+        break;
+    case 200:
+        console.log('El valor es 200')
+        break;
+    case 300:
+        console.log('El valor es 300')
+        break;
+    default:
+        console.log('Ninguno')
+        break;
+} 
+    dato4 = dato4 + 100
+}
+
+//mismo proceso anterior pero con una variable de aumento, y una funcion, con condicional if
+var dato5 = 100;
+var analizar2 = function(){
+    if (dato5 == 100) {
+        console.log('100')   
+    }
+
+    if(dato5 == 200) {
+        console.log('200')   
+    }
+
+    if(dato5 == 300) {
+        console.log('300')   
+    }
+    if (dato5 != 100 && dato5 != 200 && dato5 != 300){
+        console.log('ninguno')   
+    }
+    dato5 = dato5 + 100
+}
+
+</script>
 </head>
-<body>
-    
+<body onload="init();">
+    <center>
+    <form>
+        <h1>🎆CALCULADORA🎆</h1>
+        <h4>Por favor, antes de operar, hacer click en "Obtener Contenido".༼ つ ◕_◕ ༽つ </h4>
+        <h2>(/≧▽≦)/INGRESE DOS NUMEROS</h2>
+    <input type="text" id="numero1" class="caja_numero"><br>
+    <input type="text" id="numero2" class="caja_numero"><br>
+    <div onclick="obtener()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Obtener Contenido</div>
+    <div id="flex">
+    <div>
+        <div onclick="multiplica()"class="btn-ope">✖</div>
+        <div onclick="suma()" class="btn-ope">➕</div>
+    </div>
+    <div>
+        <div onclick="resta()" class="btn-ope derecha">➖</div>
+        <div onclick="divide()" class="btn-ope derecha2">➗</div>
+    </div>
+</div>
+
+    <input type="reset" value="Borrar" class="btn"><br>
+    <div onclick="analizar()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Analizar</div>
+    <div onclick="analizar2()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Analizar</div>
+
+    </form>
+</center>
 </body>
 </html>
