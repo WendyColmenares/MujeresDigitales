@@ -1,0 +1,191 @@
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+
+        td{
+            background: cyan;
+        }
+
+        #colorespecial{
+            background:coral;
+        }
+
+        #comentarios{
+     
+            border-radius: 5px;
+            color: darkmagenta;
+            padding: 5px;
+
+        }
+
+        .btn{
+            width: 50px;
+            border: solid 1px;
+            height: 20px;
+            padding-top: 3px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #008fd8;
+            font-style: italic;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            opacity: 0.5;
+        }
+
+        .btn:hover{
+            background: darkmagenta;
+            width: 70px;
+            height: 25px;
+        }
+
+        input.txtcaja{
+            border: solid 1px;
+            border-radius: 7px;
+            font-size: 10 px;
+            background: aquamarine;
+            transition: all 0.4s ease-in-out;
+        }
+
+        input.txtcaja:hover{
+            background: brown;
+            color: white;
+
+        }
+
+        p {
+            animation-duration: 3s;
+            animation-name: slidein;
+            }
+
+            @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+                background: red;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+                background: blue;
+            }
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: -74px;
+                left: -86px;
+            }
+
+            @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inconsolata:wght@800&display=swap');
+
+            body{
+                background-color: #CE93D8;
+                font-family: 'Dongle', sans-serif;
+                font-family: 'Inconsolata', monospace;
+            }
+    
+            input {
+                text-align: center;
+                size: 10px;
+                padding: 4px;
+                margin-bottom: 9px;
+    
+            }
+    
+            .btn{
+                text-align: center;
+                font-family: 'Dongle', sans-serif;
+                font-family: 'Inconsolata', monospace;
+                align-content: center;
+                font-size: 20px;
+                width: 120px;
+                height: 45px;
+                background: #CC0066;
+                color: #ffffff;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+                transition: all 0.5s ease-in-out;
+            }
+    
+            .btn:hover{
+                background: #FF66CC;
+                cursor: pointer;
+            }
+    
+            .btn-ope{
+                text-align: center;
+                font-family: 'Dongle', sans-serif;
+                font-family: 'Inconsolata', monospace;
+                align-content: center;
+                font-size: 20px;
+                width: 59px;
+                height: 43px;
+                background: #CC0066;
+                color: #ffffff;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin: 6px;
+                margin-right: 92px;
+                transition: all 0.4s ease-in-out;
+            }
+             .btn-ope:hover{
+                background:#A569BD;
+                cursor: pointer;
+             }
+    
+            /*.derecha{
+                position: absolute;
+                top: 274px;
+                right: 124px;
+                font-size: 39px;
+                text-align: center;
+            }
+            .derecha2{
+                position: absolute;
+                top: 323px;
+                right: 124px;
+                font-size: 21px;
+                text-align: center;
+            }*/
+    
+            h1{
+                font-size: 50px;
+                color: #CC0066;
+            }
+    
+            h2{
+                color: #CC0066;
+            }
+            h4{
+                color: #ffffff;
+            }
+    
+            #flex{
+                display: flex;
+                justify-content: center;
+                margin-left: 86px;
+    
+            }
+    
+            input.caja_numero{
+                border:none;
+                border-radius: 3px;
+                font-size: 20px;
+                background-color:#F8BBD0 ;
+                transition: all 0.5s ease-in-out;
+            }
+    
+            input.caja_numero:hover{
+                background: #A569BD;
+            }

@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./index/index.css">
     <title>Inicio</title>
 </head>
 <body>
+
     
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quod corrupti maxime unde sunt reiciendis minus omnis, explicabo dicta nobis impedit vitae et ex asperiores minima dolor! Quis, amet nobis?</p>
+   
+    <input type="text" id="txt_nombre" class="txtcaja" placeholder="Nombre" maxlength="20">
+    <input type="number" id="txt_cedula" class="txtcaja" placeholder="Cedula">
+    <input type="password" id="txt_password" class="txtcaja" placeholder="Password">
+    <input type="date" id="txt_fechanacimineto" class="txtcaja">
+    <input type="file" id="subirarchivos" class="txtcaja">
+    
+    <table>
+        <tr>
+            <th id="colorespecial">Nombre</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+
+        </tr>
+        <tr>
+            <td>Wendy</td>
+            <td>Colmenares</td>
+            <td>Calle 23b</td>
+        </tr>
+
+        <tr>
+            <td>Flor</td>
+            <td>Colmenares</td>
+            <td>Calle 23b</td>
+        </tr>
+    </table>
+
+
+    <ul>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+        <li>Lista 4</li>
+    </ul>
+    <a href="contactenos.html">contactenos</a>
+
+    <label for="genero">Seleccione el genero</label>
+    <select name="genero" id="genero">
+        <option value="F">Femenino</option>
+        <option value="M">Masculino</option>
+    </select>
+
+    <img src="https://thypix.com/wp-content/uploads/2021/03/splash-43-700x713.png ">
+ 
+    <textarea id="comentarios" class="btn" maxlength="15" placeholder="escriba un comentario">
+    </textarea>
+
+   <input type="button" value="enviar" id="el boton" class="btn">
+
+   <div id="otroboton" class="btn">enviar</div>
+
+   <div id="otroboton2" class="btn">borrar</div><br>
+    <input type="text" id="minombre" class="pruebax">
+    <input type="text" id="minombre2" class="pruebax">
+   <div onclick="agregarinformacion3()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Agregar dato</div>
+   <div onclick="agregarinformacion2()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Agregar dato</div>
+   <div id="contenedordedatos">
+       vacio
+   </div>
+
+   <div id="tablademultiplicar">
+   </div>
+
+   <div onclick="agregarcontenido()" class="btn">
+       Agregar
+   </div>
+
+   <div onclick="mostrardatos()" class="btn">
+    Mostrar
+    </div>
+   <section>
+    <center>
+        <form>
+            <h1>🎆CALCULADORA🎆</h1>
+            <h4>Por favor, antes de operar, hacer click en "Obtener Contenido".༼ つ ◕_◕ ༽つ </h4>
+            <h2>(/≧▽≦)/INGRESE DOS NUMEROS</h2>
+        <input type="text" id="numero1" class="caja_numero"><br>
+        <input type="text" id="numero2" class="caja_numero"><br>
+        <div onclick="obtener()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Obtener Contenido</div>
+        <div id="flex">
+        <div>
+            <div onclick="multiplica()"class="btn-ope">✖</div>
+            <div onclick="suma()" class="btn-ope">➕</div>
+        </div>
+        <div>
+            <div onclick="resta()" class="btn-ope derecha">➖</div>
+            <div onclick="divide()" class="btn-ope derecha2">➗</div>
+        </div>
+    </div>
+    
+        <input type="reset" value="Borrar" class="btn"><br>
+        <div onclick="analizar()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Analizar</div>
+        <div onclick="analizar2()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">Analizar</div>
+        
+        </form>
+    </center>
+   </section>
+
+   <script src="./index/index.js"></script>
 </body>
 </html>
