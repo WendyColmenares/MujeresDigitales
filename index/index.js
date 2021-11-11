@@ -235,3 +235,98 @@ function mostrardatos() {
     }
 
 }
+
+var mivarriablearray = ["goku","gohan","roshi","krilin"];
+console.log(mivarriablearray)
+
+//elimina el ultimo registro
+var mivarriablearray1 = ["goku","gohan","roshi","krilin"];
+mivarriablearray1.pop()
+console.log(mivarriablearray1)
+
+//cambia el orden de los registros
+var mivarriablearray2 = ["goku","gohan","roshi","krilin"];
+mivarriablearray2.reverse()
+console.log(mivarriablearray2)
+
+//convierte el array en cadenas de texto separadas por caracter
+var mivarriablearray3 = ["goku","gohan","roshi","krilin"];
+var temporal = mivarriablearray3.join()
+console.log(temporal)
+
+//define la cantidad de registros que hay en un array
+var mivarriablearray4 = ["goku","gohan","roshi","krilin"];
+var x = mivarriablearray4.length;
+console.log(x)
+
+//elimina items, desde dos parametros, posicion y cantidad
+var mivarriablearray5 = ["goku","gohan","roshi","krilin"];
+mivarriablearray5.splice(0,2);
+console.log(mivarriablearray5)
+
+
+var mivarriablearray6 = ["goku","gohan","roshi","krilin"];
+
+for (key of mivarriablearray6.keys()) {
+    console.log(key)
+
+    mivarriablearray6.splice(key,1)
+    
+}
+console.log(mivarriablearray6)
+
+//reemplaza datos []
+var mivarriablearray7 = ["goku","gohan","roshi","krilin"];
+
+for (key of mivarriablearray7.keys()) {
+    console.log(key)
+    mivarriablearray7[key] = key +1
+    
+}
+console.log(mivarriablearray7)
+
+//une registros de dos arrays
+var mivarriablearray8 = ["goku","gohan","roshi","krilin"];
+var tmp = ["Wendy","Colmenares"]
+
+var x = mivarriablearray8.concat(tmp)
+console.log(x)
+
+//posicion de un item
+var mivarriablearray9 = ["goku","gohan","roshi","krilin"];
+var x = mivarriablearray9.indexOf("roshi")
+//agrega texto, lo cambia
+mivarriablearray9[x] = mivarriablearray9[x]+' HolaMundo'
+console.log(mivarriablearray9)
+
+/*cambiar contenido encontrado*/
+// var mivarriablearray10 = ["goku","gohan","roshi","krilin"];
+
+// var buscarycambiar = function () {
+//     var criteriodebusqueda = document.getElementById('criterio').value
+//     var posicion = mivarriablearray10.indexOf(criteriodebusqueda)
+//     if (posicion >= 0) {
+//         mivarriablearray10[posicion] = 'Borrado'
+//         console.log(mivarriablearray10)
+        
+//     }
+//     else {
+//         alert('No se encuentra este dato')
+//     }
+// }
+
+//eliminar contenido del array
+var mivarriablearray11 = ["goku","gohan","roshi","krilin"];
+
+var buscarycambiar = function () {
+    var criteriodebusqueda = document.getElementById('criterio').value
+    var posicion = mivarriablearray11.indexOf(criteriodebusqueda)
+    if (posicion >= 0) {
+        mivarriablearray11.splice(posicion,1)
+        console.log(mivarriablearray11)
+        
+    }
+    else {
+        alert('No hay datos')
+    }
+}
