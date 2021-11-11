@@ -367,6 +367,8 @@ var buscarycambiar = function () {
 
 var misdatos = [];
 
+localStorage.setItem('prueba','pordos')
+
 var guardar = function (){
     var nombre2 = document.getElementById('nombre').value
     var apellido2 = document.getElementById('apellido').value
@@ -374,7 +376,48 @@ var guardar = function (){
     misdatos.push({nombre:nombre2, apellido:apellido2})
     var x = JSON.stringify(misdatos)
     console.log(x)
+    alert('prueba')
     localStorage.setItem('datos',x)
 }
 
-misdatos = JSON.parse(localStorage.getItem('datos').toString())
+/*Cargar los datos almacenados en el localStorage */
+/* var cargar = function () {
+    document.getElementById('nombre').value = localStorage.getItem('nombre')
+    document.getElementById('apellido').value = localStorage.getItem('apellido')
+} */
+
+var cargar = function () {
+    console.log('pruebatexto')
+    swal('Hello world!')
+    
+}
+
+var existe = localStorage.getItem('datos')
+console.log(existe)
+
+if (existe != null) {
+    console.log('si entro')
+    misdatos = JSON.parse(localStorage.getItem('datos').toString())
+}
+ var eliminarlocal = function () {
+     console.log('Eliminando datos...')
+/* elimina 1 solo dato */
+    //localStorage.removeItem('datos')
+/* elimina todos los datos de localStorage*/
+    localStorage.clear()
+}
+/*ejercicio de prueba */
+
+var datos_mascota = [];
+var almacenar = function () {
+    console.log('verificar')
+    var nombre = document.getElementById('name_pet').value
+    var edad = document.getElementById('age_pet').value
+    var dueño = document.getElementById('owner_pet').value
+
+    datos_mascota.push({name:nombre, age:edad, owner:dueño})
+    var x = JSON.stringify(datos_mascota)
+    console.log(x)
+    localStorage.setItem('mascotas',x)
+
+}
