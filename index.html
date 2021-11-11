@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="spanish">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,6 +94,17 @@
     <div onclick="cargar()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">
         Cargar </div>
 
+    <div onclick="eliminarlocal()" class="btn" style="font-size: 14px; padding-top: 10px;margin: 4px;">
+        Eliminar LocalStorage </div>
+
+    <div>
+            <input type="text" id="name_pet" placeholder="Nombre Mascota">
+            <input type="number" id="age_pet" placeholder="Edad Mascota">
+            <input type="text" id="owner_pet" placeholder="Dueño Mascota">
+            <div onclick="almacenar()" id="almacenar" class="btn" style="border: radius 3px; background: green; text-align: center;">Almacenar</div>
+
+
+    </div>
    <!-- <section>
     <center>
         <form>
@@ -130,6 +141,8 @@
     <h2 style="color: orange;">¡Hola, Mundo!</h2>  
     <h3 style="color: yellow;">¡Hola, Mundo!</h3>  
     <h4 style="color: green;">¡Hola, Mundo!</h4>  -->
-    <script src="./index/index.js"></script>      
+    <script src="./index/index.js"></script>  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 </body>
 </html>
