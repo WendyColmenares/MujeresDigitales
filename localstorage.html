@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="micorreo" placeholder="Ingrese su correo">
+        <div onclick="almacenaremail()">Guardar</div>
+        <div onclick="traeremail()">Cargar</div>
+        <div onclick="borrartodo()">Borrar Todo</div>
+        <div onclick="borraremail()">Borrar Email</div>
+    
+    </div>
+    
+    <script>
+        /*proceso de gestion y almacenamiento en localstorage*/
+        var datos = ['wendy','flor','maria']
+
+        var datosconvertidos = JSON.stringify(datos)
+
+        var almacenaremail = function (){
+            var correo = document.getElementById('micorreo').value
+            localStorage.setItem("email",correo)
+            localStorage.setItem("password",'passssss')
+            localStorage.setItem("datos",datosconvertidos)
+        }   
+
+        var traeremail = function () {
+            var correo = localStorage.getItem("email")
+            document.getElementById('micorreo').value = correo
+            datos =JSON.parse (localStorage.getItem('datos'))
+            console.log(datos)
+        }
+
+        var borrartodo = function () {
+            localStorage.clear()            
+        }
+
+        var borraremail = function () {
+            localStorage.removeItem('email')            
+        }
+
+    </script>
+</body>
+</html>
